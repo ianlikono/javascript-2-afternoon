@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Ian Likono",
+  age: "70"
+}
+alert(me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,6 +30,14 @@
 */
 
 //Code here
+var favoriteThings = {
+  band: "no",
+  food: "tacos",
+  person: "me",
+  book: "Js Uknown",
+  movie: "Harry Potter",
+  holiday: "winter"
+} 
 
 
 
@@ -35,6 +47,9 @@
 
 //Code here
 
+favoriteThings.car = "Benz"
+favoriteThings.brand = "Mercedes"
+
 
 
 /*
@@ -42,7 +57,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +72,12 @@
 */
 
 //Code here
+var backPack = {
 
+}
+var item = 'firstPocket'
+backPack[item] = 'chapstick'
+console.log(backPack)
 
 
 /*
@@ -64,7 +85,7 @@
 */
 
 //Code here
-
+alert(backPack)
 
 
 /*
@@ -74,7 +95,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -98,6 +119,8 @@ var user2 = {
 
 //Code Here
 
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -110,6 +133,10 @@ var user2 = {
 
 //Code Here
 
+var methodCollection = {
+
+}
+
 
 
 /*
@@ -118,7 +145,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function() {
+    return alert("hello")
+  },
+methodCollection.logHello = function() {
+    return console.log("hello")
+  }
 
 
 /*
@@ -126,6 +158,8 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -138,6 +172,16 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn) {
+  var obj = {
+    name: name,
+  birthday: birthday,
+  ssn: ssn 
+  }
+  return obj
+}
+makeperson
+
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +192,12 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode) {
+  var creditCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return creditCard
+}
 
